@@ -1,0 +1,4 @@
+Created a dynamodb table locally on the aws console and populated it maually. 
+Made the table have a partition key as well as a sort key for querying the data in the table.
+Querying is faster and more cost effective especially with larger data sets because its finds the data directly and doesnt waste
+time traversing throught the entire table.
