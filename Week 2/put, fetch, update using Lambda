@@ -1,8 +1,8 @@
 This was meant to go up last week but it somehow skipped me. Lat week, I craeted a lambda function thats writes to an existing DynamoDB
 table in AWS. On creation of this function I gave it the IAM permission for dynamo and updated its time-out.
-
+----------------------------------------------------------------------------------------------------------------
 First, i connected the function to the previously craeted table(from week one). That is ofcourse after importing boto3 as well as connecting Dynamo
-
+-------------------------------------------------------------------------------------------------
 After that i defined a function add_inventory() that adda a new item to the table.
 This function takes the same parameters as the ones set in the table from week one which makes it easier to passs items into the tabke without complications.
 
@@ -10,6 +10,16 @@ This function was perfect for me to use the try and except feature in python to 
 
 Errors encountered: 
 Whil defining the variables I learnt hiw case sensitive AWS is. An upper case Q instead of a lower case one made the program throw errors. 
-�PNG
-
+-------------------------------------------------------------------------------------------------
+
+I then defined a function to get items from the table using is primary and sort keys fetch_item(zone, sku).
+Following the same principles as the add function, i used the try and except feature where i try to do the fetching and catch any errors in except. 
+
+ERRORS encountered:
+In rgis function i tried passing all the parameters from the table and initializing them. With the help of Gemini, I figured the function throws an error 
+if i pass values other than the primary and sort key.
+
+How i Fixed it: 
+I simply took out other data and just left the primary and sort keys.
+------------------------------------------------------------------------------------------------
 
