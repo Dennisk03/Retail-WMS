@@ -22,4 +22,13 @@ if i pass values other than the primary and sort key.
 How i Fixed it: 
 I simply took out other data and just left the primary and sort keys.
 ------------------------------------------------------------------------------------------------
+Finally, I defined a function to update stock inventory. update_stock(zone, sku, quantity)
+The function takes 3 params primary, sort key as well as the quantity (which is the param i want to update).
+The function can also update zones, item names and all.
+
+Errors Encountered:
+like in the wprevious function, i passed in all the params from the table whcih led to me getting sismlar errors.
+
+FIX:
+Passed only the primary and sort keys.
 
